@@ -1,17 +1,30 @@
-import { HeroSection, TextContainer, Logo, Title, Subtitle, Button, ImageContainer, HeroImage } from "./LandingPage.styled";
+import {
+  HeroSection,
+  TextContainer,
+  Title,
+  Subtitle,
+  Button,
+  ImageContainer,
+  HeroImage,
+  ImageBackground,
+} from "./LandingPage.styled";
 
 const LandingPage = () => {
   return (
+    <ImageBackground>
     <HeroSection>
       <TextContainer>
-        <Title>It's that simple.</Title>
-        <Subtitle>Featuring our new spring specials!</Subtitle>
-        <Button to="/home">Details</Button>
+        <Title>Thanh's Home Made Spring Rolls</Title>
+        <Subtitle>
+        Crafted to absolute perfection with motherly love.
+        </Subtitle>
+        {/* <Button to="/home">Explore Now</Button> */}
       </TextContainer>
       <ImageContainer>
-        <HeroImage src="/ramen-dish.jpg" alt="Delicious Ramen" />
+        <HeroImage src="/thanh-spring-rolls-collage.jpg" alt="Delicious Ramen Dish" />
       </ImageContainer>
     </HeroSection>
+    </ImageBackground>
   );
 };
 
